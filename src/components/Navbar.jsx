@@ -1,7 +1,8 @@
 import { useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react'; // Icônes pour le mobile
+import { Menu, X } from 'lucide-react';
+import Logo from '../assets/Logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +22,17 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-syne font-bold tracking-tighter"
+          className="flex items-center gap-1 text-3xl font-syne font-bold tracking-tighter"
         >
-          <img src='logo'></img>
+        <img 
+          src={Logo} 
+          alt="Logo" 
+          className="w-15 h-15
+          object-contain
+          hover:scale-110 transition-transform
+          border border-white/20 rounded-full"
+        />
+
           BERGER<span className="text-neon-purple">_</span>Mathias
         </motion.div>
 
@@ -45,7 +54,7 @@ const Navbar = () => {
 
         {/* MOBILE MENU BTN */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-light">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-neon-purple">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>

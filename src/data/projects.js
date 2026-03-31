@@ -13,7 +13,7 @@ export const projects = [
     category: "Node.js / Express",
     description: "Développement d'un back-end sécurisé pour un site de notation de livres.",
     link: "#",
-    github: "#"
+    github: "https://github.com/MathCod/mon-vieux-grimoire"
   },
   {
     id: 3,
@@ -21,6 +21,14 @@ export const projects = [
     category: "JavaScript / API",
     description: "Création d'une page dynamique pour une architecte d'intérieur.",
     link: "#",
-    github: "#"
+    github: "https://github.com/MathCod/Portfolio-architecte-sophie-bluel"
+  },
+  {
+    id: 4,
+    title: "Booki",
+    category: "JavaScript / API",
+    description: "Création d'une page dynamique pour une architecte d'intérieur.",
+    link: "https://mathcod.github.io/Projet-Booki/",
+    github: "https://github.com/MathCod/Projet-Booki"
   }
 ];

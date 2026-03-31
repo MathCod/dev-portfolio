@@ -37,7 +37,7 @@ const Projects = () => {
               <h3 className="text-2xl font-syne font-bold mb-4">{project.title}</h3>
               <p className="text-gray-400 text-sm font-light mb-6">{project.description}</p>
               
-              <div className="h-[1px] w-0 group-hover:w-full bg-neon-purple transition-all duration-700"></div>
+              <div className="h-px w-0 group-hover:w-full bg-neon-purple transition-all duration-700"></div>
             </motion.div>
           ))}
         </div>

@@ -7,7 +7,9 @@ import Contact from './sections/Contact';
 
 function App() {
 return (
-    <div className="min-h-[300vh] bg-dark text-light selection:bg-neon-purple selection:text-dark">
+    <div className="min-h-[300vh]
+     bg-dark text-light selection:bg-neon-purple selection:text-dark"
+     >
       <Navbar />
       <main>
         <section id="home" className="h-screen flex flex-col items-center justify-center p-10">
@@ -15,8 +17,9 @@ return (
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-6xl md:text-9xl font-syne font-extrabold text-center leading-none"
+            className="text-6xl md:text-8xl font-syne font-extrabold text-center leading-none"
           >
+
             DEV-WEB <br /> 
             <span className="text-neon-purple">FULL-STACK</span>
           </motion.h1>
