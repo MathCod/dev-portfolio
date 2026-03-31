@@ -1,0 +1,78 @@
+import { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
+import { Menu, X } from 'lucide-react'; // Icônes pour le mobile
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = [
+    { name: 'Accueil', href: '#home' },
+    { name: 'Projets', href: '#projects' },
+    { name: 'Compétences', href: '#skills' },
+    { name: 'Contact', href: '#contact' },
+  ];
+
+  return (
+    <nav className="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/5">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        
+        {/* LOGO */}
+        <motion.div 
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="text-2xl font-syne font-bold tracking-tighter"
+        >
+          <img src='logo'></img>
+          BERGER<span className="text-neon-purple">_</span>Mathias
+        </motion.div>
+
+        {/* DESKTOP NAV */}
+        <div className="hidden md:flex gap-8">
+          {navLinks.map((link, index) => (
+            <motion.a
+              key={link.name}
+              href={link.href}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className="text-sm font-mono uppercase tracking-widest hover:text-neon-purple transition-colors duration-300"
+            >
+              {link.name}
+            </motion.a>
+          ))}
+        </div>
+
+        {/* MOBILE MENU BTN */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-light">
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </div>
+
+      {/* MOBILE NAV MENU */}
+      {isOpen && (
+        <motion.div 
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          className="md:hidden bg-dark border-b border-white/5 px-6 pb-6 flex flex-col gap-4"
+        >
+          {navLinks.map((link) => (
+            <a 
+              key={link.name} 
+              href={link.href} 
+              onClick={() => setIsOpen(false)}
+              className="text-lg font-syne hover:text-neon-purple"
+            >
+              {link.name}
+            </a>
+          ))}
+        </motion.div>
+      )}
+
+    </nav>
+  );
+};
+
+export default Navbar;
