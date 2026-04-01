@@ -23,10 +23,6 @@ const Contact = () => {
               mathias.codage@gmail.com
             </a>
 
-            <div className="flex gap-10 font-mono text-xs tracking-widest text-gray-500 uppercase mt-10">
-              <a href="https://www.linkedin.com/in/mathias-berger-8b04b43a6/" className="hover:text-neon-purple transition-colors">[ LinkedIn ]</a>
-              <a href="https://github.com/MathCod" className="hover:text-neon-purple transition-colors">[ GitHub ]</a>
-            </div>
           </div>
         </motion.div>
       </div>

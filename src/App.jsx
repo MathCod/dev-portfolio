@@ -6,6 +6,7 @@ import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import Banner from './assets/Banner.jpeg';
 import Cv from './sections/Cv';
+import Footer from './sections/Footer';
 
 function App() {
 return (
@@ -52,6 +53,7 @@ return (
         <section>
           <Contact />
         </section>
+        <Footer />
       </main>
     </div>
   )
