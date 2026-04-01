@@ -4,14 +4,14 @@ import { projects } from '../data/projects';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6 md:px-20 bg-slate-900">
+    <section id="projects" className="pt-5 pb-20 px-6 md:px-20 bg-slate-800">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           className="text-4xl font-syne font-bold mb-20 uppercase italic"
         >
-          Projets<span className="text-neon-purple">_</span>
+          <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>Projets</span><span className="text-neon-purple">_</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'Accueil', href: '#home' },
     { name: 'Projets', href: '#projects' },
     { name: 'Compétences', href: '#skills' },
-    { name: 'CV', href: '#CV' },
+    { name: 'CV', href: '#cv' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -34,7 +34,7 @@ const Navbar = () => {
           border border-white/20 rounded-full"
         />
 
-          BERGER<span className="text-neon-purple">_</span>Mathias
+          {/* D<span className="text-neon-purple">E</span>V */}
         </motion.div>
 
         {/* DESKTOP NAV */}
@@ -66,7 +66,7 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
-          className="md:hidden bg-dark border-b border-white/5 px-6 pb-6 flex flex-col gap-4"
+          className="md:hidden bg-transparent border-b border-white/5 px-6 pb-6 flex flex-col gap-3"
         >
           {navLinks.map((link) => (
             <a 

@@ -4,24 +4,32 @@ import Navbar from './components/Navbar'
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import Contact from './sections/Contact';
+import Banner from './assets/Banner.jpeg';
+import Cv from './sections/Cv';
 
 function App() {
 return (
     <div className="min-h-[300vh]
-     bg-slate-900 text-light selection:bg-neon-purple selection:text-dark"
+     bg-slate-800 text-light selection:bg-neon-purple selection:text-dark"
      >
       <Navbar />
       <main>
-        <section id="home" className="h-screen flex flex-col items-center justify-center p-10">
+        <section id="home" className="h-300px pt-20">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-6xl md:text-8xl font-syne font-extrabold text-center leading-none"
           >
+            <img 
+              src={Banner} 
+              alt="Banière" 
+              className="w-full h-auto object-cover rounded-lg mb-0 shadow-lg"
+            />
 
-            DEV-WEB <br /> 
-            <span className="text-neon-purple md:text-6xl">FULL-STACK</span>
+
+            {/* DEV-WEB <br /> 
+            <span className="text-neon-purple md:text-6xl">FULL-STACK</span> */}
           </motion.h1>
           
           <motion.p 
@@ -40,7 +48,7 @@ return (
         <section>
           <Skills />
         </section>
-
+              <Cv />
         <section>
           <Contact />
         </section>
