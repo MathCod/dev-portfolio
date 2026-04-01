@@ -4,7 +4,7 @@ import { projects } from '../data/projects';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6 md:px-20 bg-dark">
+    <section id="projects" className="py-20 px-6 md:px-20 bg-slate-900">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0 }}
@@ -22,7 +22,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group bg-white/5 border border-white/10 p-8 hover:border-neon-purple/50 transition-all duration-500"
+              className="group bg-white/4 border border-white/50 p-8 hover:border-neon-purple/50 transition-all duration-500"
             >
               <div className="flex justify-between items-start mb-6">
                 <span className="text-[10px] font-mono text-neon-purple border border-neon-purple/30 px-2 py-1 uppercase">

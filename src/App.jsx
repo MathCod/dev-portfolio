@@ -8,7 +8,7 @@ import Contact from './sections/Contact';
 function App() {
 return (
     <div className="min-h-[300vh]
-     bg-dark text-light selection:bg-neon-purple selection:text-dark"
+     bg-slate-900 text-light selection:bg-neon-purple selection:text-dark"
      >
       <Navbar />
       <main>
@@ -21,7 +21,7 @@ return (
           >
 
             DEV-WEB <br /> 
-            <span className="text-neon-purple">FULL-STACK</span>
+            <span className="text-neon-purple md:text-6xl">FULL-STACK</span>
           </motion.h1>
           
           <motion.p 
