@@ -4,7 +4,7 @@ import { projects } from '../data/projects';
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-5 pb-20 px-6 md:px-20 bg-slate-800">
+    <section id="projects" className="py-20 px-6 md:px-20 bg-slate-900">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0 }}

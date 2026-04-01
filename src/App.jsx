@@ -40,7 +40,7 @@ return (
           >
           </motion.p>
         </section>
-
+        <Cv />
         <section>
           <Projects />
         </section>
@@ -48,7 +48,7 @@ return (
         <section>
           <Skills />
         </section>
-              <Cv />
+              
         <section>
           <Contact />
         </section>
