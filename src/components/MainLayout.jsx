@@ -9,7 +9,7 @@ const MainLayout = () => {
     bg-slate-800 text-light selection:bg-neon-purple selection:text-dark">
       <ScrollToTop />
       <Navbar />
-      <main className="grow pt-20 bg-slate-900">
+      <main className="grow pt-20 bg-slate-800">
         <Outlet />
       </main>
       

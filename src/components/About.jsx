@@ -4,7 +4,7 @@ import { MapPin, Rocket } from 'lucide-react'; // On utilise Lucide pour la simp
 
 const About = () => {
   return (
-    <section id="about" className="py-30 px-6 md:px-20 bg-slate-900">
+    <section id="about" className="py-30 px-6 md:px-20 bg-slate-800">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         
         {/* PARTIE GAUCHE : TEXTE */}

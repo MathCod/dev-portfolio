@@ -4,7 +4,7 @@ import BtnCv from '../components/BtnCv';
 
 const Cv = () => {
   return (
-    <section id="cv" className="py-30 px-6 md:px-20 bg-slate-900">
+    <section id="cv" className="py-30 px-6 md:px-20 bg-slate-800">
       <div className="max-w-4xl mx-auto text-center">
         
         <motion.div
