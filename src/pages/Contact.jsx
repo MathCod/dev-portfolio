@@ -17,7 +17,7 @@ const Contact = () => {
 
           <div className="flex flex-col items-center gap-8">
             <a 
-              href="mailto:ton-email@exemple.com" 
+              href="mailto:mathias.codage@gmail.com" 
               className="text-xl md:text-2xl font-mono hover:text-cyan-400 transition-colors border-b border-white/10 pb-2"
             >
               mathias.codage@gmail.com
