@@ -1,7 +1,7 @@
 const BtnCv = () => {
   return (
     <a 
-        href="/CV_Mathias_Berger.pdf" 
+        href="./CV.pdf"
         download="CV_Mathias_Berger.pdf"
         target="_blank"
         rel="noreferrer"
