@@ -12,11 +12,11 @@ const Form = () => {
     setStatus('sending');
 
     emailjs.sendForm(
-      'service_108fpu8',   // <--- Ton Service ID
-      'template_3gjbgm1',  // <--- Ton Template ID
-      form.current,
-      'BHiD4kNVaKoxT3iOs'     // <--- Ta Public Key
-    )
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    form.current,
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  )
     .then(() => {
         setStatus('success');
         e.target.reset(); // Vide les champs
