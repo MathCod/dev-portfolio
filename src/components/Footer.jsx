@@ -27,23 +27,6 @@ const Footer = () => {
                 Disponible pour de nouveaux projets
               </p>
             </div>
-            <p className="text-gray-500 text-sm max-w-sm leading-relaxed">
-              Développeur Front-end passionné par la création d'expériences numériques 
-              uniques et performantes. Basé dans les Landes.
-            </p>
-          </div>
-
-          {/* COLONNE 2 : NAVIGATION */}
-          <div>
-            <h4 className="font-mono text-xm font-bold mb-6 uppercase tracking-[0.2em]
-            bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent">Menu</h4>
-            <ul className="space-y-4 font-syne text-sm">
-              <li><a href="#home" className="hover:text-neon-purple transition-colors italic">Accueil</a></li>
-              <li><a href="#cv" className="hover:text-neon-purple transition-colors italic">CV</a></li>
-              <li><a href="#projects" className="hover:text-neon-purple transition-colors italic">Projets</a></li>
-              <li><a href="#skills" className="hover:text-neon-purple transition-colors italic">Compétences</a></li>
-              <li><a href="#contact" className="hover:text-neon-purple transition-colors italic">Contact</a></li>
-            </ul>
           </div>
 
           {/* COLONNE 3 : SOCIALS */}

@@ -1,27 +1,19 @@
-// eslint-disable-next-line no-unused-vars
-import { motion } from 'framer-motion';
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainLayout from './components/MainLayout';
-
-import Navbar from './components/Navbar'
-import Banner from './components/Banner';
+import Home from './pages/Home';
 import Cv from './pages/Cv';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
-import Footer from './components/Footer';
-
-import ScrollToTop from './components/ScrollToTop'; // Petit bonus important
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />, // Le parent avec Navbar/Footer
+    element: <MainLayout />,
     children: [
       {
         path: "/",
-        element: <Banner />, // Page d'accueil
+        element: <Home />,
       },
       {
         path: "/cv",
