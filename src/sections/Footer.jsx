@@ -35,18 +35,21 @@ const Footer = () => {
 
           {/* COLONNE 2 : NAVIGATION */}
           <div>
-            <h4 className="font-mono text-neon-purple text-xs font-bold mb-6 uppercase tracking-[0.2em]">Menu</h4>
+            <h4 className="font-mono text-xm font-bold mb-6 uppercase tracking-[0.2em]
+            bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent">Menu</h4>
             <ul className="space-y-4 font-syne text-sm">
-              <li><a href="#home" className="hover:text-neon-purple transition-colors">Accueil</a></li>
-              <li><a href="#projects" className="hover:text-neon-purple transition-colors">Projets</a></li>
-              <li><a href="#skills" className="hover:text-neon-purple transition-colors">Compétences</a></li>
-              <li><a href="#contact" className="hover:text-neon-purple transition-colors">Contact</a></li>
+              <li><a href="#home" className="hover:text-neon-purple transition-colors italic">Accueil</a></li>
+              <li><a href="#cv" className="hover:text-neon-purple transition-colors italic">CV</a></li>
+              <li><a href="#projects" className="hover:text-neon-purple transition-colors italic">Projets</a></li>
+              <li><a href="#skills" className="hover:text-neon-purple transition-colors italic">Compétences</a></li>
+              <li><a href="#contact" className="hover:text-neon-purple transition-colors italic">Contact</a></li>
             </ul>
           </div>
 
           {/* COLONNE 3 : SOCIALS */}
           <div>
-            <h4 className="font-mono text-neon-purple text-xs font-bold mb-6 uppercase tracking-[0.2em]">Social</h4>
+            <h4 className="font-mono text-xm font-bold mb-6 uppercase tracking-[0.2em]
+            bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent">Social</h4>
             <ul className="space-y-4 font-syne text-sm">
               <li><a href="#" className="hover:text-neon-purple transition-colors italic">GitHub</a></li>
               <li><a href="#" className="hover:text-neon-purple transition-colors italic">LinkedIn</a></li>

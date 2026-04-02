@@ -2,16 +2,16 @@ import { useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import Logo from '../assets/Logo.jpg';
+import Logo from '../assets/Logo.webp';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { name: 'Accueil', href: '#home' },
+    { name: 'CV', href: '#cv' },
     { name: 'Projets', href: '#projects' },
     { name: 'Compétences', href: '#skills' },
-    { name: 'CV', href: '#cv' },
     { name: 'Contact', href: '#contact' },
   ];
 

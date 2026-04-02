@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Cv = () => {
   return (
-    <section id="cv" className="pt-10 pb-20 px-6 md:px-20 bg-slate-800">
+    <section id="cv" className="pt-20 pb-30 px-6 md:px-20 bg-slate-800">
       <div className="max-w-4xl mx-auto text-center">
         
         <motion.div
