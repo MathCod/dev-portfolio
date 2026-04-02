@@ -11,7 +11,7 @@ const Projects = () => {
           whileInView={{ opacity: 1 }}
           className="text-4xl font-syne font-bold mb-20 uppercase italic"
         >
-          <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>Projets</span><span className="text-neon-purple">_</span>
+          <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>Projets_</span>
         </motion.h2>
         
         <Card />

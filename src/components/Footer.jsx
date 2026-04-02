@@ -1,63 +1,56 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const socialLinks = [
+    { 
+      name: 'GitHub', 
+      icon: <FaGithub />, 
+      href: 'https://github.com/MathCod',
+      color: '#bc13fe' 
+    },
+    { 
+      name: 'LinkedIn', 
+      icon: <FaLinkedin />, 
+      href: 'https://www.linkedin.com/in/mathias-berger-8b04b43a6/',
+      color: '#0077b5'
+    },
+  ];
 
   return (
-    <footer className="bg-dark border-t border-white/5 pt-10 pb-10 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          
-          {/* COLONNE 1 : LOGO & STATUS */}
-          <div className="md:col-span-2">
-            <h3 className="text-2xl font-syne font-bold mb-6">
-              BERGER<span className="text-neon-purple">_</span>Mathias
-            </h3>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-purple opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-neon-purple"></span>
-              </span>
-              <p className="font-mono text-xs uppercase tracking-widest text-gray-400">
-                Disponible pour de nouveaux projets
-              </p>
-            </div>
-          </div>
+    <footer className="bg-dark border-t border-white/10 pt-5 pb-5 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
+        <h3 className="text-xl font-syne font-bold mb-2 uppercase italic">
+          <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>réseaux sociaux_</span>
+        </h3>
 
-          {/* COLONNE 3 : SOCIALS */}
-          <div>
-            <h4 className="font-mono text-xm font-bold mb-6 uppercase tracking-[0.2em]
-            bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent">Social</h4>
-            <ul className="space-y-4 font-syne text-sm">
-              <li><a href="#" className="hover:text-neon-purple transition-colors italic">GitHub</a></li>
-              <li><a href="#" className="hover:text-neon-purple transition-colors italic">LinkedIn</a></li>
-            </ul>
-          </div>
+        {/* SECTION LOGOS SOCIAUX ANIMÉS */}
+        <div className="flex gap-10 mb-5">
+          {socialLinks.map((social) => (
+            <motion.a
+              key={social.name}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              // L'animation de soulèvement et de taille
+              whileHover={{ y: -8, scale: 1.2 }}
+              className="relative group p-4"
+            >
+              <div className="relative z-10 text-4xl text-gray-400 group-hover:text-neon-purple transition-colors duration-300">
+                {social.icon}
+              </div>
+            </motion.a>
+          ))}
         </div>
 
-        {/* LIGNE FINALE : COPYRIGHT & BACK TO TOP */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="w-full pt-8 border-t border-white/5 text-center">
           <p className="font-mono text-[10px] text-gray-600 uppercase tracking-widest">
-            © {currentYear} — CONSTRUIT AVEC REACT & TAILWIND 4
+            © {currentYear} — CONSTRUIT AVEC REACT & TAILWIND / MATHIAS BERGER
           </p>
-          
-          <button 
-            onClick={scrollToTop}
-            className="group flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-gray-400 hover:text-neon-purple transition-colors"
-          >
-            Retour en haut
-            <svg 
-              width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-              className="group-hover:-translate-y-1 transition-transform"
-            >
-              <polyline points="18 15 12 9 6 15"></polyline>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>

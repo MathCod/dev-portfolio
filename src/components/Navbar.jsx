@@ -2,13 +2,12 @@ import { useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { NavLink, Link } from 'react-router-dom'; // Import des composants de navigation
+import { NavLink, Link } from 'react-router-dom';
 import Logo from '../assets/Logo.webp';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Mise à jour des href vers des "to" (chemins réels)
   const navLinks = [
     { name: 'Accueil', to: '/' },
     { name: 'CV', to: '/cv' },
@@ -20,8 +19,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-dark/50 backdrop-blur-md border-b border-white/20">
       <div className="max-w-8xl mx-auto px-6 h-20 flex justify-between items-center">
-        
-        {/* LOGO - Utilisation de Link pour revenir à l'accueil */}
+
         <Link to="/">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}

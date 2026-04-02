@@ -4,7 +4,7 @@ import BtnCv from '../components/BtnCv';
 
 const Cv = () => {
   return (
-    <section id="cv" className="py-30 px-6 md:px-20 bg-slate-800">
+    <section id="cv" className="py-30 px-6 md:px-20 bg-slate-900">
       <div className="max-w-4xl mx-auto text-center">
         
         <motion.div
@@ -13,7 +13,7 @@ const Cv = () => {
           viewport={{ once: true }}
             >
           <h2 className="text-4xl font-syne font-bold mb-8 uppercase italic">
-            <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>Mon Parcours</span><span className="text-neon-purple">_</span>
+            <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>Mon Parcours_</span>
           </h2>
           
           <p className="text-gray-200 font-mono text-1xl mb-12 max-w-2xl mx-auto leading-relaxed">

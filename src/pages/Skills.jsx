@@ -5,27 +5,27 @@ const Skills = () => {
   const categories = [
     {
       title: "// FRONTEND",
-      items: ["React.js", "JavaScript ES6", "Tailwind CSS", "HTML5 / CSS3", "Framer Motion"]
+      items: ["React.js", "JavaScript", "Tailwind CSS", "Sass", "HTML5 / CSS3", "Framer Motion", "React Router", "Responsive Design", "SEO"]
     },
     {
       title: "// BACKEND",
-      items: ["Node.js", "Express", "MongoDB", "APIs REST", "NoSQL"]
+      items: ["Node.js", "Express", "APIs REST", "MongoDB", "NoSQL"]
     },
     {
       title: "// TOOLS",
-      items: ["Git / GitHub", "VS Code", "Figma", "Agile / Scrum", "Vite"]
+      items: ["Git / GitHub", "VS Code", "Figma", "Agile / Scrum", "Vite", "Postman", "Vercel"]
     }
   ];
 
   return (
-    <section id="skills" className="py-30 px-6 md:px-20 border-t border-white/5 bg-slate-800">
+    <section id="skills" className="py-30 px-6 md:px-20 border-t border-white/5 bg-slate-900">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           className="text-4xl font-syne font-bold mb-20 uppercase italic"
         >
-          <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>Compétences</span><span className="text-neon-purple">_</span>
+          <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>Compétences_</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">

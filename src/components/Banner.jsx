@@ -14,7 +14,7 @@ const Banner = () => {
             <img 
               src={banner} 
               alt="Banière" 
-              className="w-11/12 md:w-4/6 h-auto pt-10 rounded-full shadow-xl block mx-auto"
+              className="w-11/12 md:w-3/6 h-auto rounded-full shadow-xl block mx-auto"
             />
           </motion.h1>
     </div>
