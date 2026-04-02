@@ -27,13 +27,18 @@ const Form = () => {
   };
 
   return (
-    /* AJOUT : ref={form} et onSubmit={sendEmail} */
     <form ref={form} onSubmit={sendEmail} className="space-y-6">
+        <div className="mb-10 text-left">
+            <h3 className="text-2xl font-syne text-center tracking-tight text-white">
+                mathias.codage@gmail.com
+            </h3>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
                 <label className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2">Votre nom</label>
                 <input 
-                  name="from_name" // Doit être identique à EmailJS
+                  name="from_name"
                   required
                   type="text" 
                   placeholder="Mathias Berger"
@@ -43,7 +48,7 @@ const Form = () => {
             <div className="space-y-2">
                 <label className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2">Votre email</label>
                 <input
-                  name="from_email" // Doit être identique à EmailJS
+                  name="from_email"
                   required
                   type="email" 
                   placeholder="nom@exemple.com"
@@ -55,7 +60,7 @@ const Form = () => {
         <div className="space-y-2">
             <label className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2">Votre message</label>
             <textarea
-                name="message" // Doit être identique à EmailJS
+                name="message"
                 required
                 rows="5"
                 placeholder="Bonjour Mathias, j'aimerais discuter d'un projet..."

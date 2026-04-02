@@ -16,12 +16,7 @@ const Contact = () => {
         </h2>
 
         <div className="flex flex-col items-center gap-8">
-          <a 
-            href="mailto:mathias.codage@gmail.com" 
-            className="text-xl md:text-2xl font-mono hover:text-neon-purple transition-colors border-b border-white/10 pb-2"
-          >
-            mathias.codage@gmail.com
-          </a>
+          <p className="text-2xl">Remplissez ce formulaire et je vous répondrai sous un bref délai.</p>
         </div>
       </motion.div>
 
