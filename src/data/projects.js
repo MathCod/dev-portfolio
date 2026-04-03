@@ -1,7 +1,13 @@
+import kasaImg from '../assets/Projets/kasa.webp';
+import grimoireImg from '../assets/Projets/Grimoire.webp';
+import bookiImg from '../assets/Projets/Booki.webp';
+import sophieBluelImg from '../assets/Projets/Sophie.webp';
+
 export const projects = [
   {
     id: 1,
     title: "Kasa",
+    image: kasaImg,
     category: "React / Sass",
     description: "Application de location immobilière avec gestion de routing complexe.",
     link: "https://projet-kasa-lilac.vercel.app/",
@@ -10,22 +16,25 @@ export const projects = [
   {
     id: 2,
     title: "Mon Vieux Grimoire",
+    image: grimoireImg,
     category: "Node.js / Express",
     description: "Développement d'un back-end sécurisé pour un site de notation de livres.",
-    link: "#",
+    link: "https://mon-vieux-grimoire-hazel.vercel.app/",
     github: "https://github.com/MathCod/mon-vieux-grimoire"
   },
   {
     id: 3,
     title: "Sophie Bluel",
+    image: sophieBluelImg,
     category: "JavaScript / API",
     description: "Création d'une page dynamique pour une architecte d'intérieur.",
-    link: "#",
+    link: "https://portfolio-architecte-sophie-bluel-virid.vercel.app/index.html",
     github: "https://github.com/MathCod/Portfolio-architecte-sophie-bluel"
   },
   {
     id: 4,
     title: "Booki",
+    image: bookiImg,
     category: "JavaScript / API",
     description: "Création d'une page dynamique pour une architecte d'intérieur.",
     link: "https://mathcod.github.io/Projet-Booki/",

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import banner from '../assets/Banner-profil.jpg';
+import banner from '../assets/Banner-profil.webp';
 
 const Banner = () => {
   return (
