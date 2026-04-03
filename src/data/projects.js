@@ -1,7 +1,7 @@
-import kasaImg from '../assets/Projets/kasa.webp';
-import grimoireImg from '../assets/Projets/Grimoire.webp';
-import bookiImg from '../assets/Projets/Booki.webp';
-import sophieBluelImg from '../assets/Projets/Sophie.webp';
+import kasaImg from '../assets/projets/kasa.webp';
+import grimoireImg from '../assets/projets/Grimoire.webp';
+import bookiImg from '../assets/projets/Booki.webp';
+import sophieBluelImg from '../assets/projets/Sophie.webp';
 
 export const projects = [
   {
