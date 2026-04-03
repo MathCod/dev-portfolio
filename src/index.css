@@ -1,6 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&family=Syne:wght@800&display=swap');
 
-/* Configuration de tes couleurs et polices (Version 4) */
 @theme {
   --color-dark: #0a0a0a;
   --color-light: #e5e5e5;
@@ -10,9 +10,6 @@
   --font-syne: "Syne", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
-
-/* Import des polices Google */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&family=Syne:wght@800&display=swap');
 
 :root {
   background-color: var(--color-dark);
