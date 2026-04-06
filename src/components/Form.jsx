@@ -83,7 +83,7 @@ const Form = () => {
           className={`w-full py-5 font-syne font-bold uppercase tracking-widest rounded-xl transition-all flex items-center justify-center gap-3 ${
             status === 'sending' 
               ? 'bg-gray-700 cursor-not-allowed text-gray-400' 
-              : 'bg-neon-purple text-dark shadow-[0_0_20px_rgba(188,19,254,0.3)] hover:shadow-[0_0_30px_rgba(188,19,254,0.5)]'
+              : 'bg-neon-purple text-white shadow-[0_0_20px_rgba(188,19,254,0.3)] hover:shadow-[0_0_30px_rgba(188,19,254,0.5)]'
           }`}
         >
           {status === 'sending' ? (

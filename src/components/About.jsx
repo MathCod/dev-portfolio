@@ -64,9 +64,9 @@ const About = () => {
               <span className="text-8xl md:text-7xl font-syne font-black text-white/5 absolute -top-2 left-0 select-none">npm install//</span>
               <span className="text-8xl md:text-7xl font-syne font-black text-white/5 absolute -bottom-1 right-0 select-none">//npm run dev</span>
 
-              <p className="text-2xl font-syne font-bold leading-tight">
+              <h3 className="text-2xl font-syne font-bold leading-tight">
                 "Le code est <br /> un voyage <br /> <span className="text-neon-purple">passionné.</span>"
-              </p>
+              </h3>
             </div>
             
             {/* Décoration angle */}

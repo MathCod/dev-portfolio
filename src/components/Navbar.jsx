@@ -20,19 +20,17 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 bg-dark/50 font-bold backdrop-blur-md border-b border-white/20">
       <div className="max-w-8xl mx-auto px-6 h-20 flex justify-between items-center">
 
-        <Link to="/">
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-1 text-3xl font-syne font-bold tracking-tighter"
-          >
-            <img 
-              src={Logo} 
-              alt="Berger Mathias - Portfolio Accueil" 
-              className="w-15 h-15 object-contain hover:scale-110 transition-transform border border-white/20 rounded-full"
-            />
-          </motion.div>
-        </Link>
+        <motion.div 
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="flex items-center gap-1 text-3xl font-syne font-bold tracking-tighter"
+        >
+          <img 
+            src={Logo} 
+            alt="Berger Mathias - Portfolio Accueil" 
+            className="w-15 h-15 object-contain hover:scale-110 transition-transform border border-white/20 rounded-full"
+          />
+        </motion.div>
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex gap-8">

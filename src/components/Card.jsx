@@ -48,7 +48,7 @@ const Card = () => {
               </div>
 
               {/* 2. CONTENU TEXTE */}
-              <div className="p-8 flex flex-col grow">
+              <div className="p-5 flex flex-col grow">
                 <div className="flex justify-between items-center mb-4">
                   {/* BADGE DE STATUT */}
                   <div className="flex items-center gap-2">
@@ -68,7 +68,7 @@ const Card = () => {
                     )}
                   </div>
 
-                  <span className="text-[10px] font-mono text-neon-purple border border-neon-purple/30 px-2 py-1 uppercase tracking-widest rounded">
+                  <span className="text-[12px] font-mono text-neon-purple border border-neon-purple/30 px-2 py-1 uppercase tracking-widest rounded">
                     {project.category}
                   </span>
                 </div>
