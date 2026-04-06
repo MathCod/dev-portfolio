@@ -49,7 +49,7 @@ const Footer = () => {
 
         <div className="w-full pt-8 border-t border-white/5 text-center">
           <p className="font-mono text-[10px] text-gray-600 uppercase tracking-widest">
-            © {currentYear} — CONSTRUIT AVEC REACT & TAILWIND / MATHIAS BERGER
+            © {currentYear} — CONSTRUIT AVEC REACT & TAILWIND | MATHIAS BERGER
           </p>
         </div>
       </div>

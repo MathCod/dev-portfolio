@@ -28,11 +28,6 @@ const Form = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} className="space-y-6">
-        <div className="mb-10 text-left">
-            <h3 className="text-2xl font-syne text-center tracking-tight text-white">
-                mathias.codage@gmail.com
-            </h3>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">

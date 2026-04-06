@@ -13,11 +13,10 @@ const Card = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              /* On garde ta classe group et tes bordures */
               className="group bg-white/5 border border-white/20 hover:border-neon-purple/50 transition-all duration-500 overflow-hidden flex flex-col h-full rounded-2xl"
             >
               
-              {/* 1. CONTENEUR IMAGE (En haut) */}
+              {/* 1. CONTENEUR IMAGE */}
               <div className="relative aspect-video overflow-hidden border-b border-white/10">
                 <img 
                   src={project.image} 
@@ -25,8 +24,8 @@ const Card = () => {
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" 
                 />
                 
-                {/* OVERLAY GLASSMORPHISM AU SURVOL */}
-                <div className="absolute inset-0 bg-dark/40 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center gap-6">
+                {/* OVERLAY : On ajoute hidden md:flex (caché sur mobile, flex sur desktop) */}
+                <div className="hidden md:flex absolute inset-0 bg-dark/40 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-500 items-center justify-center gap-6">
                   <a 
                     href={project.github} 
                     target="_blank" 
@@ -46,12 +45,11 @@ const Card = () => {
                 </div>
               </div>
 
-              {/* 2. CONTENU TEXTE (En bas) */}
+              {/* 2. CONTENU TEXTE */}
               <div className="p-8 flex flex-col grow">
                 <div className="flex justify-between items-center mb-4">
-
                   {/* BADGE DE STATUT */}
-                  <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center gap-2">
                     {project.status === "progress" ? (
                       <div className="flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full">
                         <span className="relative flex h-2 w-2">
@@ -77,9 +75,29 @@ const Card = () => {
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-400 text-sm font-light leading-relaxed mb-6 grow">
+                <p className="text-gray-200 text-sm font-light leading-relaxed mb-6 grow">
                   {project.description}
                 </p>
+
+                {/* --- BLOC LIENS MOBILE : Uniquement visible sur mobile (md:hidden) --- */}
+                <div className="flex md:hidden gap-4 mb-6">
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="flex-1 py-3 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center gap-2 text-[10px] font-mono uppercase tracking-widest text-light active:bg-neon-purple active:text-dark transition-colors"
+                  >
+                    <FiGithub size={16} /> GitHub
+                  </a>
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="flex-1 py-3 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center gap-2 text-[10px] font-mono uppercase tracking-widest text-light active:bg-neon-purple active:text-dark transition-colors"
+                  >
+                    <FiExternalLink size={16} /> Live
+                  </a>
+                </div>
 
                 {/* TA LIGNE ANIMÉE EN BAS */}
                 <div className="h-px w-0 group-hover:w-full bg-neon-purple transition-all duration-700 shadow-[0_0_8px_#bc13fe]"></div>
