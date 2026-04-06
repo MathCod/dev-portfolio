@@ -26,7 +26,9 @@ const Navbar = () => {
           className="flex items-center gap-1 text-3xl font-syne font-bold tracking-tighter"
         >
           <img 
-            src={Logo} 
+            src={Logo}
+              width="500" 
+              height="500" 
             alt="Berger Mathias - Portfolio Accueil" 
             className="w-15 h-15 object-contain hover:scale-110 transition-transform border border-white/20 rounded-full"
           />

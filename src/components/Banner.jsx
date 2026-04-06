@@ -12,8 +12,10 @@ const Banner = () => {
             className=""
           >
             <img 
-              src={banner} 
-              alt="Banière" 
+              src={banner}
+              width="1200" 
+              height="509"
+              alt="Banière"
               className="w-11/12 md:w-3/6 h-auto rounded-full shadow-xl block mx-auto"
             />
           </motion.h1>
