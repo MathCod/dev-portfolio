@@ -73,9 +73,9 @@ const Card = () => {
                   </span>
                 </div>
                 
-                <h3 className="text-2xl font-syne font-bold mb-3 text-light group-hover:text-neon-purple transition-colors">
+                <h2 className="text-2xl font-syne font-bold mb-3 text-light group-hover:text-neon-purple transition-colors">
                   {project.title}
-                </h3>
+                </h2>
                 
                 <p className="text-gray-200 text-sm font-light leading-relaxed mb-6 grow">
                   {project.description}

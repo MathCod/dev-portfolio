@@ -24,9 +24,9 @@ const Footer = () => {
   return (
     <footer className="bg-dark border-t border-white/10 pt-5 pb-5 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
-        <h3 className="text-xl font-syne font-bold mb-2 uppercase italic">
+        <h2 className="text-xl font-syne font-bold mb-2 uppercase italic">
           <span className='bg-linear-to-r from-light to-neon-purple bg-clip-text text-transparent'>réseaux sociaux_</span>
-        </h3>
+        </h2>
 
         {/* SECTION LOGOS SOCIAUX ANIMÉS */}
         <div className="flex gap-10 mb-5">

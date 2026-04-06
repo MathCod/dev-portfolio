@@ -80,9 +80,9 @@ const Skills = () => {
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="font-mono text-neon-purple text-2xl tracking-[0.3em] mb-8 border-b border-neon-purple/20 pb-2">
+              <h2 className="font-mono text-neon-purple text-2xl tracking-[0.3em] mb-8 border-b border-neon-purple/20 pb-2">
                 {cat.title}
-              </h3>
+              </h2>
               <ul className="space-y-4">
                 {cat.items.map((skill) => (
                   <li key={skill.name} className="group flex items-center gap-3">
