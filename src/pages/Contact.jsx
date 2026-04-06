@@ -16,7 +16,7 @@ const Contact = () => {
         </h1>
 
         <div className="flex flex-col items-center gap-8">
-          <p className="text-2xl">Remplissez ce formulaire et je vous répondrai sous un bref délai.</p>
+          <p className="text-2xl">Veuillez remplir ce formulaire et je vous répondrai rapidement.</p>
         </div>
       </motion.div>
 

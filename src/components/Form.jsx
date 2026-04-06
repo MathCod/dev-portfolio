@@ -40,7 +40,7 @@ const Form = () => {
                   name="from_name"
                   required
                   type="text" 
-                  placeholder="Mathias Berger"
+                  placeholder="John Doe"
                   className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all placeholder:text-gray-400 text-white"
                 />
             </div>
@@ -54,7 +54,7 @@ const Form = () => {
                   name="from_email"
                   required
                   type="email" 
-                  placeholder="nom@exemple.com"
+                  placeholder="john-doe@gmail.com"
                   className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all placeholder:text-gray-400 text-white"
                 />
             </div>

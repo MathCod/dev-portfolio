@@ -27,7 +27,8 @@ const About = () => {
             </p>
             <p>
               Ce changement de cap m'a permis de développer une grande adaptabilité et une 
-              soif d'apprendre constante. Aujourd'hui, je me spécialise dans l'écosystème 
+              soif d'apprendre constante. Aujourd'hui, je me spécialise en
+              <span className="text-neon-purple font-mono"> Front-end</span>, dans l'écosystème 
               <span className="text-neon-purple font-mono"> React.js </span> pour concevoir 
               des interfaces modernes et intuitives et dans l'optimisation 
               <span className="text-neon-purple font-mono"> SEO</span>.
