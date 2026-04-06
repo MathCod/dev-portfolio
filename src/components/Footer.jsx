@@ -34,6 +34,7 @@ const Footer = () => {
             <motion.a
               key={social.name}
               href={social.href}
+              aria-label={`Visiter mon profil ${social.name}`}
               target="_blank"
               rel="noopener noreferrer"
               // L'animation de soulèvement et de taille

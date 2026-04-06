@@ -28,6 +28,7 @@ const Card = () => {
                 <div className="hidden md:flex absolute inset-0 bg-dark/40 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-500 items-center justify-center gap-6">
                   <a 
                     href={project.github} 
+                    aria-label={`Voir le code source du projet ${project.title} sur GitHub`}
                     target="_blank" 
                     rel="noreferrer" 
                     className="p-3 bg-white/10 rounded-full text-white hover:bg-neon-purple hover:text-dark transition-all transform translate-y-4 group-hover:translate-y-0 duration-300"
@@ -36,6 +37,7 @@ const Card = () => {
                   </a>
                   <a 
                     href={project.link} 
+                    aria-label={`Voir le site du projet ${project.title} en ligne`}
                     target="_blank" 
                     rel="noreferrer" 
                     className="p-3 bg-white/10 rounded-full text-white hover:bg-neon-purple hover:text-dark transition-all transform translate-y-4 group-hover:translate-y-0 duration-300"
