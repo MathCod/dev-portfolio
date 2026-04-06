@@ -20,7 +20,8 @@ const About = () => {
 
           <div className="space-y-6 font-light text-gray-300 leading-relaxed text-lg">
             <p>
-              Passionné par le numérique depuis toujours, j'ai pris le tournant d'une 
+              Bonjour, je suis Mathias BERGER, passionné par le numérique depuis toujours. Après 8 ans dans la
+              Logistique et le Transport de marchandises, j'ai pris le tournant d'une 
               <span className="text-light font-medium"> reconversion professionnelle </span> 
               pour donner vie à mes idées à travers le code. 
             </p>
@@ -28,7 +29,8 @@ const About = () => {
               Ce changement de cap m'a permis de développer une grande adaptabilité et une 
               soif d'apprendre constante. Aujourd'hui, je me spécialise dans l'écosystème 
               <span className="text-neon-purple font-mono"> React.js </span> pour concevoir 
-              des interfaces modernes et intuitives.
+              des interfaces modernes et intuitives et dans l'optimisation 
+              <span className="text-neon-purple font-mono"> SEO</span>.
             </p>
           </div>
 

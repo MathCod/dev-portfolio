@@ -50,7 +50,7 @@ export const projects = [
     title: "La Valée d'Ombrelune",
     status: "progress",
     image: ombreluneImg,
-    category: "Projet Personnel - React",
+    category: "Projet Personnel",
     description: "Conception et développement d'un site vitrine immersif pour un élevage de Bergers Américains Miniatures. Focus sur une expérience utilisateur (UX) élégante, avec une gestion dynamique des portées et des galeries photos, mettant en avant le design et la performance sous React.",
     link: "https://la-vallee-dombrelune.vercel.app/",
     github: "https://github.com/MathCod/la-vallee-dombrelune"
