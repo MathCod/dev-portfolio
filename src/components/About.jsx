@@ -62,8 +62,8 @@ const About = () => {
             <div className="absolute inset-0 bg-neon-purple/5 blur-3xl group-hover:bg-neon-purple/10 transition-colors"></div>
             
             <div className="text-center z-10">
-              <span className="text-8xl md:text-7xl font-syne font-black text-white/5 absolute -top-2 left-0 select-none">npm install//</span>
-              <span className="text-8xl md:text-7xl font-syne font-black text-white/5 absolute -bottom-1 right-0 select-none">//npm run dev</span>
+              <span className="text-6xl md:text-5xl font-syne font-black text-white/5 absolute -top-1 left-1 select-none">npm install//</span>
+              <span className="text-6xl md:text-5xl font-syne font-black text-white/5 absolute bottom-0 right-1 select-none">//npm run dev</span>
 
               <h3 className="text-2xl font-syne font-bold leading-tight">
                 "Le code est <br /> un voyage <br /> <span className="text-neon-purple">passionné.</span>"
