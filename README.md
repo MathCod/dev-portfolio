@@ -73,7 +73,7 @@ VITE_EMAILJS_PUBLIC_KEY=votre_cle
 3. **Lancer le serveur de développement**
 
 ```bash
-npm install
+npm run dev
 ```
 
 📂 **Structure du Projet**
@@ -86,9 +86,13 @@ src/
  └── App.jsx          # Configuration des routes (Data Router)
 ```
 👤 **Contact**
+
 Mathias Berger
+
 📍 Landes (40), France
+
 💼 [LinkedIn](https://www.linkedin.com/in/mathias-berger-8b04b43a6/) | 🐙 [GitHub](https://github.com/MathCod)
+
 📧 mathias.codage@gmail.com
 
 Réalisé dans le cadre de la formation OpenClassrooms.
