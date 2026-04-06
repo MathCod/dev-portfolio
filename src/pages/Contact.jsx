@@ -10,10 +10,10 @@ const Contact = () => {
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-16"
       >
-        <h2 className="text-5xl md:text-7xl font-syne font-extrabold mb-12 uppercase leading-none">
+        <h1 className="text-5xl md:text-7xl font-syne font-extrabold mb-12 uppercase leading-none">
           UN PROJET ?<br />
           <span className="text-neon-purple md:text-4xl">DISCUTONS-EN.</span>
-        </h2>
+        </h1>
 
         <div className="flex flex-col items-center gap-8">
           <p className="text-2xl">Remplissez ce formulaire et je vous répondrai sous un bref délai.</p>

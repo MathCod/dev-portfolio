@@ -31,35 +31,47 @@ const Form = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
-                <label className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2">Votre nom</label>
-                <input 
+                <label
+                  className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2"
+                  htmlFor="from_name"
+                  >Votre nom</label>
+                <input
+                  id="from_name"
                   name="from_name"
                   required
                   type="text" 
                   placeholder="Mathias Berger"
-                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all placeholder:text-gray-600 text-white"
+                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all placeholder:text-gray-400 text-white"
                 />
             </div>
             <div className="space-y-2">
-                <label className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2">Votre email</label>
+                <label
+                  htmlFor="from_email"
+                  className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2"
+                  >Votre email</label>
                 <input
+                  id="from_email"
                   name="from_email"
                   required
                   type="email" 
                   placeholder="nom@exemple.com"
-                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all placeholder:text-gray-600 text-white"
+                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all placeholder:text-gray-400 text-white"
                 />
             </div>
         </div>
 
         <div className="space-y-2">
-            <label className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2">Votre message</label>
+            <label
+              htmlFor="message"
+              className="font-mono text-[15px] uppercase tracking-widest text-neon-purple ml-2"
+              >Votre message</label>
             <textarea
+                id="message"
                 name="message"
                 required
                 rows="5"
                 placeholder="Bonjour Mathias, j'aimerais discuter d'un projet..."
-                className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all placeholder:text-gray-600 resize-none text-white"
+                className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all placeholder:text-gray-400 resize-none text-white"
             ></textarea>
         </div>
 
@@ -78,7 +90,7 @@ const Form = () => {
             <span>Chargement...</span>
           ) : (
             <>
-              <span>🚀</span>
+              <span aria-hidden="true">🚀</span>
               Envoyer le message
             </>
           )}

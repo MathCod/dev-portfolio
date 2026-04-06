@@ -28,7 +28,7 @@ const Navbar = () => {
           >
             <img 
               src={Logo} 
-              alt="Logo" 
+              alt="Berger Mathias - Portfolio Accueil" 
               className="w-15 h-15 object-contain hover:scale-110 transition-transform border border-white/20 rounded-full"
             />
           </motion.div>
